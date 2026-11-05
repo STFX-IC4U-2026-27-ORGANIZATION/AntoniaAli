@@ -5,8 +5,8 @@ public class Movie {
 	// data members (4 data members)
 	String title;
 	String director;
-	float durationMinutes;
-	int rating;
+	String durationMinutes;
+	String rating;
 	
 	// default constructor
 	
