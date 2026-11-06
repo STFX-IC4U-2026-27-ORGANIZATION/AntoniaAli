@@ -12,7 +12,7 @@ public class Movie {
     public Movie() {
         this.title = "";
         this.director = "";
-        this.durationMinutes = "";
+        this.durationMinutes = ".";
         this.rating = "";
     }
 
