@@ -30,7 +30,13 @@ public class ReadFileMethod {
 			while ( (split = br.readLine()) != null) {
 				
 				String[] movieInfo = split.split(" ");
-				//movies.add(temp, temp, temp, temp);
+				title = movieInfo[0];
+				director = movieInfo[1];
+				durationMinutes = movieInfo[2];
+				rating = movieInfo[3];
+				
+				movies.add(new Movie (title, director, durationMinutes, rating));
+				
 				
 			}
 			
