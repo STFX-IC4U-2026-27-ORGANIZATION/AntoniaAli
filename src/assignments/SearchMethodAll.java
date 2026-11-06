@@ -5,7 +5,7 @@ public class SearchMethodAll {
 
 	public static void main(String[] args) {
 
-		// Search method
+		// Search method for all data members
 		
 	}
 	

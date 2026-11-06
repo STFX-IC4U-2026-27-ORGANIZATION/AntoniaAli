@@ -5,7 +5,7 @@ public class SearchMethod2 {
 
 	public static void main(String[] args) {
 
-		// Search method
+		// Search method for data member 2
 		
 	}
 	
