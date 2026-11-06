@@ -9,9 +9,32 @@ public class SearchMethod4 {
 		
 	}
 	
-	// DESCRIPTION -
-	// PARAMETERS -
-	// RETURN TYPE -
-	//public static 
+	// DESCRIPTION - Searches if the rating is found as a data member in array a
+	// PARAMETERS - Movie[] a, String rating, int index
+	// RETURN TYPE - int
+	public static int searchRating (Movie[] a, String rating, int index) {
+		
+		// error case
+		if (index < 0 || index > (a.length - 1) || a.length <= 0) {
+			
+			return -1;
+		}		
+		
+		// base (stop) case
+		if (a[index].getRating().compareToIgnoreCase(rating) == 0) {
+			
+			return index;
+		}
+		
+		// base (stop) case
+		if (a[index].getRating().compareToIgnoreCase(rating) > 0) {
+			
+			return -1;
+		}
+		
+		// recursive call
+		return searchRating(a, rating, index + 1);
+				
+	}
 
 }
