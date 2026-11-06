@@ -1,9 +1,7 @@
 package assignments;
 
 import java.util.ArrayList;
-
 import templates.Movie;
-
 import java.io.*;
 
 public class ReadFileMethod {
