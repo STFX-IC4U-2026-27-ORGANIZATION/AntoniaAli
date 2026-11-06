@@ -1,7 +1,7 @@
 package assignments;
 import templates.Movie;
 
-public class SearchMethod {
+public class SearchMethodAll {
 
 	public static void main(String[] args) {
 
@@ -12,9 +12,6 @@ public class SearchMethod {
 	// DESCRIPTION -
 	// PARAMETERS -
 	// RETURN TYPE -
-	//public static Movie[] searchMovie (String movieName) {
-		
-		
-	//}
+	//public static 
 
 }
