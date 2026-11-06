@@ -21,11 +21,16 @@ public class SearchMethod2 {
 			return -1;
 		}		
 		
-		// base case
-		if (a[index].getDirector().equals(director)) {
+		// base (stop) case
+		if (a[index].getDirector().compareToIgnoreCase(director) == 0) {
 			
 			return index;
+		}
+		
+		// base (stop) case
+		if (a[index].getDirector().compareToIgnoreCase(director) > 0) {
 			
+			return -1;
 		}
 		
 		// recursive call

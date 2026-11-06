@@ -24,7 +24,7 @@ public class Movie {
         this.rating = rating;
     }
 
-    // get method
+    // get methods
     public String getTitle() {
         return title;
     }
@@ -41,7 +41,7 @@ public class Movie {
         return rating;
     }
 
-    // set method
+    // set methods
     public void setTitle(String title) {
         this.title = title;
     }
