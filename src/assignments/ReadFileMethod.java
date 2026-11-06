@@ -1,7 +1,9 @@
 package assignments;
 
-import assignments.Movie;
 import java.util.ArrayList;
+
+import templates.Movie;
+
 import java.io.*;
 
 public class ReadFileMethod {
@@ -15,7 +17,7 @@ public class ReadFileMethod {
 	// DESCRIPTION -
 	// PARAMETERS -
 	// RETURN TYPE -
-	public static Movie[] readMoviesFromFile (String fileName) {
+	public static Movie[] loadMoviesFromFile (String fileName) {
 		
 		//variables
 		ArrayList<Movie> movies = new ArrayList<Movie>();

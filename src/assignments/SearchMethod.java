@@ -1,5 +1,5 @@
 package assignments;
-import assignments.Movie;
+import templates.Movie;
 
 public class SearchMethod {
 

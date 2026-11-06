@@ -1,4 +1,4 @@
-package assignments;
+package templates;
 
 public class Movie {
 	
