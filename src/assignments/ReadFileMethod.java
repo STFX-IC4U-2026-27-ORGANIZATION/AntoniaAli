@@ -20,16 +20,17 @@ public class ReadFileMethod {
 		//variables
 		ArrayList<Movie> movies = new ArrayList<Movie>();
 		BufferedReader br = null;
-		String title;
+		String title, director, durationMinutes, rating, split;
 		
 		try {
 			
 			// load file into memory
 			br = new BufferedReader(new FileReader(fileName));
 			
-			while ( (title = br.readLine()) != null) {
+			while ( (split = br.readLine()) != null) {
 				
-				//movies.add(tile, br.readLine(), br.readLine(), br.readLine());
+				String[] movieInfo = split.split(" ");
+				//movies.add(temp, temp, temp, temp);
 				
 			}
 			

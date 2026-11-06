@@ -10,9 +10,13 @@ public class SearchMethodAll {
 		
 	}
 	
-	// DESCRIPTION -
-	// PARAMETERS -
-	// RETURN TYPE -
-	//public static 
+	// DESCRIPTION - Checks which search method has the data member
+	// PARAMETERS - 
+	// RETURN TYPE - 
+	//public static int searchAll () {
+		
+		
+		
+	//}
 
 }

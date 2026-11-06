@@ -1,40 +1,10 @@
-Inception
-Christopher Nolan
-148
-PG-13
-The Shawshank Redemption
-Frank Darabont
-142
-R
-Spiderman: Into the Spider-Verse
-Bob Persichetti, Peter Ramsey, Rodney Rothman
-117
-PG
-The Dark Knight
-Christopher Nolan
-152
-PG-13
-Interstellar
-Christopher Nolan
-169
-PG-13
-Jurassic Park
-Steven Spielberg
-127
-PG-13
-The Matrix
-Lana Wachowski, Lilly Wachowski
-136
-R
-Back to the Future
-Robert Zemeckis
-116
-PG
-Spirited Away
-Hayao Miyazaki
-125
-PG
-The Truman Show
-Peter Weir
-103
-PG
+Inception ChristopherNolan 148 PG-13
+TheShawshankRedemption FrankDarabont 142 R
+Spiderman:IntotheSpider-Verse BobPersichetti 117 PG
+TheDarkKnight ChristopherNolan 152 PG-13
+Interstellar ChristopherNolan 169 PG-13
+JurassicPark StevenSpielberg 127 PG-13
+TheMatrix TheWachowskis 136 R
+BacktotheFuture RobertZemeckis 116 PG
+SpiritedAway HayaoMiyazaki 125 PG
+TheTrumanShow PeterWeir 103 PG
