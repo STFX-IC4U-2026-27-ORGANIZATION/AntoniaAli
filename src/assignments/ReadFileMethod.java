@@ -12,9 +12,9 @@ public class ReadFileMethod {
 		
 	}
 	
-	// DESCRIPTION -
-	// PARAMETERS -
-	// RETURN TYPE -
+	// DESCRIPTION - Returns Movie[] populated with Movie objects from file
+	// PARAMETERS - String fileName
+	// RETURN TYPE - Movie[]
 	public static Movie[] loadMoviesFromFile (String fileName) {
 		
 		//variables
