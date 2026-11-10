@@ -23,7 +23,7 @@ public class SearchMethod4 {
 	public static int searchRating (Movie[] a, String rating, int index) {
 		
 		// error case
-		if (index < 0 || index >= a.length - 1 || a.length == 0 || a == null) {
+		if (index < 0 || index >= a.length || a.length == 0 || a == null) {
 			
 			return -1;
 		}		
