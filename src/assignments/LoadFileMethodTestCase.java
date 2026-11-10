@@ -17,10 +17,12 @@ public class LoadFileMethodTestCase {
 
 		
 		// Test Case 2:
+		
 		Movie[] movies1 = ReadFileMethod.loadMoviesFromFile("NonexistentFile.txt");
 		System.out.println(movies1.length);
 		
 		// Test Case 3:
+		
 		Movie[] movies2 = ReadFileMethod.loadMoviesFromFile("Empty.txt");
 
 		System.out.println(movies2.length);
