@@ -18,7 +18,7 @@ public class SearchMethod2 {
 	}
 	
 	
-	// DESCRIPTION - Searches if the director is found as a data member in array a
+	// DESCRIPTION - Recursively searches array a for a matching director
 	// PARAMETERS - Movie[] a, String director, int index
 	// RETURN TYPE - int
 	public static int searchDirector (Movie[] a, String director, int index) {

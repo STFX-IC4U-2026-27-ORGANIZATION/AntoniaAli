@@ -17,7 +17,7 @@ public class SearchMethod4 {
 		
 	}
 	
-	// DESCRIPTION - Searches if the rating is found as a data member in array a
+	// DESCRIPTION - Recursively searches array a for a matching rating
 	// PARAMETERS - Movie[] a, String rating, int index
 	// RETURN TYPE - int
 	public static int searchRating (Movie[] a, String rating, int index) {
