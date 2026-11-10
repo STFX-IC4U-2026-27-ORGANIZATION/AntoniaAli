@@ -25,23 +25,16 @@ public class SearchMethodAll {
 	public static int searchAll (Movie[] a, String word, int index) {
 		
 		// variables
+		int firstSearch = 0;
 		int secondSearch = 0;
+		int thirdSearch = 0;
 		int fourthSearch = 0;
 		
-		// Checks searchByTitle
-		Movie[] title = assignments.SearchMethod1.searchByTitle(a, word);
-		
-		if (title != null && title.length > 0) {
+		// Checks searchTitle
+		if ((firstSearch = assignments.SearchMethod1.searchTitle(a, word, index)) != -1) {
 			
-			for (int i = 0; i < a.length; i++) {
-				if (a[i] == title[0]) {
-					
-					return i;
-					
-				}
-				
-			}
-	
+			return firstSearch;
+			
 		}
 		
 		// Checks searchDirector 
@@ -51,22 +44,14 @@ public class SearchMethodAll {
 			
 		}
 		
-		// Checks searchByDurationMinutes
-		//Movie[] duration = assignments.SearchMethod3.searchByDurationMinutes(a, word);
+		// Checks searchDuration
+		//if ((thirdSearch = assignments.SearchMethod3.searchDuration(a, word, index)) != -1) {
 		
-		//if (duration != null && duration.length > 0) {
+		//	return thirdSearch;
 			
-		//	for (int i = 0; i < a.length; i++) {
-		//		if (a[i] == duration[0]) {
-					
-		//			return i;
-					
-		//		}
-				
-		//	}
-	
 		//}
 		
+		// Checks searchRating
 		if ((fourthSearch = assignments.SearchMethod4.searchRating(a, word, index)) != -1) {
 			
 			return fourthSearch;
