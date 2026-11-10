@@ -19,7 +19,7 @@ public class SearchMethodAll {
 		
 	}
 	
-	// DESCRIPTION - Checks which search method finds a match
+	// DESCRIPTION - Checks which search method finds a match and returns its index
 	// PARAMETERS - Movie[] a, word, index
 	// RETURN TYPE - int
 	public static int searchAll (Movie[] a, String word, int index) {
