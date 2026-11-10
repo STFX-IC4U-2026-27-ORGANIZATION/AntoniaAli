@@ -34,7 +34,19 @@ public class SearchMethodTestCase {
 		 
 		catch (Exception e) { System.out.println("Caught out of bounds exception"); 
 		}
+		
+		int result5 = assignments.SearchMethodAll.searchAll(movies, "whiPlaSh", 0); 
 
+		System.out.println(result5);
+		
+		// Test Cases for SearchMethod2
+		
+
+		int result4 = assignments.SearchMethod2.searchDirector(movies, "david_lynch", 0); 
+		
+		System.out.println("Test 4 Result: " + result4);
+
+		
 		
 	}
 

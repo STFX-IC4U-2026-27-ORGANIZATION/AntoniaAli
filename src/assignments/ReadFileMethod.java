@@ -9,6 +9,7 @@ public class ReadFileMethod {
 	public static void main(String[] args) {
 
 		// Read file method
+		// Written by Antonia Dobre!
 		
 	}
 	
