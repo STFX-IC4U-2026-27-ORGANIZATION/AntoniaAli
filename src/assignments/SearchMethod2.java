@@ -6,6 +6,14 @@ public class SearchMethod2 {
 	public static void main(String[] args) {
 
 		// Search method for data member 2
+		// Written by Antonia Dobre!
+		
+		// Test Cases:
+		Movie[] a = assignments.ReadFileMethod.loadMoviesFromFile("Movies.txt");
+		
+		System.out.println(searchDirector(a, "DavidLynch", 0));
+		
+		// Expected Output: 8
 		
 	}
 	
@@ -16,7 +24,7 @@ public class SearchMethod2 {
 	public static int searchDirector (Movie[] a, String director, int index) {
 		
 		// error case
-		if (index < 0 || index > (a.length - 1) || a.length <= 0) {
+		if (index < 0 || index >= a.length || a == null || a.length == 0) {
 			
 			return -1;
 		}		
@@ -25,12 +33,6 @@ public class SearchMethod2 {
 		if (a[index].getDirector().compareToIgnoreCase(director) == 0) {
 			
 			return index;
-		}
-		
-		// base (stop) case
-		if (a[index].getDirector().compareToIgnoreCase(director) > 0) {
-			
-			return -1;
 		}
 		
 		// recursive call

@@ -6,6 +6,14 @@ public class SearchMethod4 {
 	public static void main(String[] args) {
 
 		// Search method for data member 4
+		// Written by Antonia Dobre!
+		
+		// Test Cases:
+		Movie[] a = assignments.ReadFileMethod.loadMoviesFromFile("Movies.txt");
+		
+		System.out.println(searchRating(a, "R17", 0));
+		
+		// Expected Output: 4
 		
 	}
 	
@@ -15,7 +23,7 @@ public class SearchMethod4 {
 	public static int searchRating (Movie[] a, String rating, int index) {
 		
 		// error case
-		if (index < 0 || index > (a.length - 1) || a.length <= 0) {
+		if (index < 0 || index >= a.length - 1 || a.length == 0 || a == null) {
 			
 			return -1;
 		}		
@@ -26,11 +34,6 @@ public class SearchMethod4 {
 			return index;
 		}
 		
-		// base (stop) case
-		if (a[index].getRating().compareToIgnoreCase(rating) > 0) {
-			
-			return -1;
-		}
 		
 		// recursive call
 		return searchRating(a, rating, index + 1);
