@@ -18,11 +18,11 @@ public class SearchMethodTestCase {
 		System.out.println("Test 2 Result: " + result2);
 
 
-try { Movie invalid = movies[movies.length]; 
-}
- 
-catch (Exception e) { System.out.println("Caught out of bounds exception"); 
-}
+		try { Movie invalid = movies[movies.length]; 
+		}
+		 
+		catch (Exception e) { System.out.println("Caught out of bounds exception"); 
+		}
 
 		
 	}
