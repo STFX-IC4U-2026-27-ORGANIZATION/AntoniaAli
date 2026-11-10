@@ -1,12 +1,23 @@
-package sandbox;
+package assignments;
 import templates.Movie; 
-import assignments.ReadFileMethod; 
 
 public class SearchMethodTestCase {
 
 	public static void main(String[] args) {
 		
-				
+		
+		// Test Cases for searchTitle
+		Movie[] library = ReadFileMethod.loadMoviesFromFile("Movies.txt");
+
+
+		int results = SearchMethod1.searchTitle(library, "Inception", 0);
+
+
+		System.out.println(results);
+
+		
+		// Test Cases for assigbnments.SearchMethodAll.searchAll
+		
 		Movie[] movies = ReadFileMethod.loadMoviesFromFile("Movies.txt"); int 
 
 		result1 = assignments.SearchMethodAll.searchAll(movies, "ToyStory", 0); 

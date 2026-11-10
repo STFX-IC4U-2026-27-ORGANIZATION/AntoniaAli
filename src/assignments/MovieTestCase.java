@@ -7,17 +7,23 @@ public class MovieTestCase {
 
 
 		// Test Case 1:
-				
-		// Test Case 2:
-		
-		// Test Case 3:
-		
-		// Text Case 4:
-		
-		// Test Case
-		// ....
 
-		Movie myMovie = new Movie("hi", "hi", "hi", "hi");
+		Movie m1 = new Movie();
+
+		System.out.println(m1.getTitle());
+		
+		// Expected Output: Empty
+		
+		// Test Case 2:
+		Movie m2 = new Movie("Inception", "Christopher_Nolan", "148", "PG-13");
+
+		System.out.println(m2.getDirector()); 
+		
+		// Expected Output: Christopher_Nolan
+
+
+		// All Test Cases work!
+		
 		
 		
 	}

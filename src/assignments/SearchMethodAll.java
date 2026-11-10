@@ -9,6 +9,12 @@ public class SearchMethodAll {
 		// Search method for all data members
 		// Written by Antonia Dobre!
 		
+		// Message to Adam: I am the one tasked with the Search Method for All Data Members 
+		// Please do SearchMethod3 ! There is no need for the ReturnSearchMethod class because I did it
+		// All you have to do is test my methods and let me know if they work for you or not
+		// You are doing Test Case Execution for my methods just as I am supposed to test your methods
+	    // please and thank you!
+		
 		// Test Cases:
 		Movie[] a = assignments.ReadFileMethod.loadMoviesFromFile("Movies.txt");
         
