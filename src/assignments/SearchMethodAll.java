@@ -8,16 +8,7 @@ public class SearchMethodAll {
 
 		// Search method for all data members
 		// Written by Antonia Dobre!
-		
-		// Message to Adam: I am so sorry I just realized that the ReturnSearchMethod
-		// was actually created by me on the first day of this assignment
-		// as a way to make a note to myself that we had to make a method that searches
-		// through all search methods for each data member.
-		// Please ignore my previous message. I thought you made it, but it was me who actually made that class.
-		// I'll delete that class asap as it is no longer needed.
-		// I still highly suggest you make the GUI and the search method for data member 3
-		// please and thank you!
-		// Have a great day!
+
 		
 		// Test Cases:
 		Movie[] a = assignments.ReadFileMethod.loadMoviesFromFile("Movies.txt");
