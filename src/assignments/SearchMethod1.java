@@ -1,51 +1,33 @@
 package assignments;
-
 import templates.Movie;
-import java.util.ArrayList;
-import java.util.List;
 
 public class SearchMethod1 {
 
-    // DESCRIPTION - main method to run test cases for search by title
-    // PARAMETERS - String[] args
-    // RETURN TYPE - void
     public static void main(String[] args) {
-        Movie[] library = ReadFileMethod.loadMoviesFromFile("Movies.txt");
-
-        // Test Case 1: Search existing title
-        Movie[] results1 = searchByTitle(library, "Inception");
-        if (results1.length > 0) {
-            System.out.println(results1[0].getTitle());
-        }
-
-        // Test Case 2: Case-insensitive search
-        Movie[] results2 = searchByTitle(library, "inception");
-        if (results2.length > 0) {
-            System.out.println(results2[0].getTitle());
-        }
-
-        // Test Case 3: Search non-existent title
-        Movie[] results3 = searchByTitle(library, "Avatar");
-        System.out.println(results3.length);
+        // Search method for data member 1 (Title)
     }
 
-    // DESCRIPTION - searches array of Movie objects by Title using dynamic ArrayList filtering
-    // PARAMETERS - Movie[] movies, String searchTitle
-    // RETURN TYPE - Movie[]
-    public static Movie[] searchByTitle(Movie[] movies, String searchTitle) {
-        if (movies == null || searchTitle == null || searchTitle.trim().isEmpty()) {
-            return new Movie[0];
+    // DESCRIPTION - Searches if the title is found as a data member in array a
+    // PARAMETERS  - Movie[] a, String title, int index
+    // RETURN TYPE - int
+    public static int searchTitle(Movie[] a, String title, int index) {
+        
+        // error case
+        if (index < 0 || index > (a.length - 1) || a.length <= 0) {
+            return -1;
         }
 
-        List<Movie> matches = new ArrayList<>();
-        String query = searchTitle.trim();
-
-        for (Movie movie : movies) {
-            if (movie != null && movie.getTitle().equalsIgnoreCase(query)) {
-                matches.add(movie);
-            }
+        // base (stop) case - item found
+        if (a[index].getTitle().equalsIgnoreCase(title)) {
+            return index;
         }
 
-        return matches.toArray(new Movie[0]);
+        // base (stop) case - passed target in sorted array (optional, matching SearchMethod2)
+        if (a[index].getTitle().compareToIgnoreCase(title) > 0) {
+            return -1;
+        }
+
+        // recursive call
+        return searchTitle(a, title, index + 1);
     }
 }
